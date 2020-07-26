@@ -1,0 +1,27 @@
+team: team419
+######################
+speed_go_straight: 50
+speed_go_snow: 30
+speed_process_tf: 45
+speed_process_ob: 35
+####################
+angle_tf_left: -28
+angle_tl_right: 26
+#####################
+angle_snow_left: -12
+angle_snow_right: 6
+####################
+time_delay_tf_left: 0.8
+time_delay_tf_right: 0.8
+#########################
+time_delay_ob_left: 0.3
+time_delay_ob_right: 0.3
+##########################
+time_delay_snow_left: 0.9
+time_delay_snow_right: 0.8
+###########################
+pos_ob : 25
+limit_dis_lane: 110
+limit_area_ob: 250
+###########################
+debug: False

@@ -1,0 +1,13 @@
+<launch>
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+    <param name="port" value="9090"/>
+  </include>
+  <node pkg="team419" type="trafficsign.py" name="trafficsign" output="screen">
+  </node>
+  <node pkg="team419" type="lanedetect.py" name="lanedetect" output="screen">
+  </node>
+  <node pkg="team419" type="obstacle.py" name="obstacle" output="screen">
+  </node>
+  <node pkg="team419" type="main.py" name="main" output="screen">
+  </node>
+</launch>
