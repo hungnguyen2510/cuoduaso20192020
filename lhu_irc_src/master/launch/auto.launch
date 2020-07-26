@@ -1,0 +1,19 @@
+<launch>
+    <!-- ######### CAR & SENSOR ######### -->
+    <include file="$(find astra_camera)/launch/astra.launch" />
+    <include file="$(find mpu_9250)/launch/mpu_9250.launch" />
+    <node pkg="hal" type="hal_node" name="hal_node" required="true" output="screen"/>
+    <node pkg="car_controller" type="car_controller_node" name="car_controller_node" required="true" output="screen"/>
+
+
+    <!-- ######### DETECTION ######### -->
+    <node pkg="lane_detect" type="main.py" name="node_lane_detect" output="screen"/>
+<!--     <node pkg="obstacle_detect" type="main.py" name="node_obstacle_detect" output="screen"/> -->
+    <node pkg="parking_detect" type="main.py" name="node_parking_detect" output="screen"/>
+    <!-- <node pkg="traffic_sign_detect" type="main.py" name="node_traffic_sign_detect" output="screen"/>  -->
+
+    <!-- ######### MASTER CONTROL ######### -->
+    <node pkg="master" type="main.py" name="node_master_control" output="screen"/> 
+
+
+</launch>

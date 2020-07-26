@@ -1,0 +1,48 @@
+run: LHU_The_walkers
+
+LHU_The_walkers:
+  # sky view
+  w_sky: 320
+  h_sky: 240
+
+  sky_top: 80
+  sky_bot: 0
+
+  increase_sky_top: 0
+  increase_sky_bot: 0
+  # Tăng chiều cao của mắt chim
+  increase_sky_view: -20
+
+  # speed
+  max_speed: 13
+  min_speed: 10
+
+  w_sliding: 30
+  h_sliding: 13
+  num_lane: 20
+
+  num_curve: 20
+
+  # Góc khi tới khúc cua
+  next_angle_car_turn: 30
+  limit_angle_car_turn: 60
+
+  # Căn chỉnh khi tới giao lộ
+  range_junction: [150, 170]
+  sub_width_junction: 30
+
+  turn_off_all_debug: FALSE
+
+  debug_final: True
+  debug_findcontours: True
+  debug_sliding_window: True
+  debug_junc: False
+  debug_obstacle: True
+
+  debug_draw_point_mid: True
+  debug_draw_point_side: True
+
+  debug_time_lane: False
+  debug_time_obstacle: False
+
+  debug_calibrate_camera: False
